@@ -10,6 +10,7 @@ With that in mind, here are the specific features I have in mind:
 - Make available a parsed representation of the usage text.  This could be used to automatically build shell completion plugins.
 
 - Allow the user to specify a list of docstrings where option descriptions may be taken from.  This is for sharing common options between commands.  Each command must still specify its own usage section, but the long descriptions can be imported from these other strings.  The long descriptions would appear in the same order as specified by the usage section.
+  - If the same option has multiple long descriptions, only the first will be used.  This allows for overwriting default descriptions with more specific/tailored info.
 
 - Use module docstring by default.
 
