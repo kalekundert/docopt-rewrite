@@ -13,4 +13,4 @@ With that in mind, here are the specific features I have in mind:
 
 - Use module docstring by default.
 
-- Better unit tests.  Docopt is pretty buggy.
+- Better unit tests, and a real parsing library.  Docopt is pretty buggy.
