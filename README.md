@@ -15,3 +15,7 @@ With that in mind, here are the specific features I have in mind:
 - Use module docstring by default.
 
 - Better unit tests, and a real parsing library.  Docopt is pretty buggy.
+
+- Support this usage syntax: `foo [-x <y>...]`
+
+  This means that the `-x` option could be followed by any number of values.
