@@ -19,3 +19,5 @@ With that in mind, here are the specific features I have in mind:
 - Support this usage syntax: `foo [-x <y>...]`
 
   This means that the `-x` option could be followed by any number of values.
+  
+- Better error messages.  When docopt fails to parse the command-line arguments and prints out the usage text, it gives no hint as to what the problem was.  Even with short command-lines, I can have trouble figuring out the issue.  With long command-lines it's really bad.
