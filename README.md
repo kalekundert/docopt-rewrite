@@ -21,3 +21,5 @@ With that in mind, here are the specific features I have in mind:
   This means that the `-x` option could be followed by any number of values.
   
 - Better error messages.  When docopt fails to parse the command-line arguments and prints out the usage text, it gives no hint as to what the problem was.  Even with short command-lines, I can have trouble figuring out the issue.  With long command-lines it's really bad.
+
+- Allow user to specify custom program name, i.e. how much of the beginning of the usage line to ignore.  By default, the first word on the usage line will be taken as the program name.  But sometimes I have scripts that are meant to be run as 'python -m path.to.module', and it'd be nice to support things like that.
