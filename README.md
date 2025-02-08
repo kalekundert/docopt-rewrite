@@ -10,6 +10,7 @@ With that in mind, here are the specific features I have in mind:
 - Make available a parsed representation of the usage text.  This could be used to automatically build shell completion plugins.
 
 - Allow the user to specify a list of docstrings where option descriptions may be taken from.  This is for sharing common options between commands.  Each command must still specify its own usage section, but the long descriptions can be imported from these other strings.  The long descriptions would appear in the same order as specified by the usage section.
+
   - If the same option has multiple long descriptions, only the first will be used.  This allows for overwriting default descriptions with more specific/tailored info.
 
 - Use module docstring by default.
@@ -23,3 +24,6 @@ With that in mind, here are the specific features I have in mind:
 - Better error messages.  When docopt fails to parse the command-line arguments and prints out the usage text, it gives no hint as to what the problem was.  Even with short command-lines, I can have trouble figuring out the issue.  With long command-lines it's really bad.
 
 - Allow user to specify custom program name, i.e. how much of the beginning of the usage line to ignore.  By default, the first word on the usage line will be taken as the program name.  But sometimes I have scripts that are meant to be run as 'python -m path.to.module', and it'd be nice to support things like that.
+
+- Force the user to include `--help` in the usage text.  Have an argument for what the name of the "help" argument shuold be, then complain if that name isn't in the usage text.
+  - That said, the git commands don't explicitly list the `--help` option.  
