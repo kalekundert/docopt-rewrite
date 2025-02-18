@@ -26,4 +26,6 @@ With that in mind, here are the specific features I have in mind:
 - Allow user to specify custom program name, i.e. how much of the beginning of the usage line to ignore.  By default, the first word on the usage line will be taken as the program name.  But sometimes I have scripts that are meant to be run as 'python -m path.to.module', and it'd be nice to support things like that.
 
 - Force the user to include `--help` in the usage text.  Have an argument for what the name of the "help" argument shuold be, then complain if that name isn't in the usage text.
-  - That said, the git commands don't explicitly list the `--help` option.  
+  - That said, the git commands don't explicitly list the `--help` option.
+ 
+A possibly relevant standard to reference: https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html#tag_12_01
